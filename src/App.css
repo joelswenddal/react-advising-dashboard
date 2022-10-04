@@ -32,7 +32,93 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+#bubble-chart {
+  border-color: #1f4761;
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+
+/*NEW - for pure Chart.js components*/
+.chart-wrapper {
+  padding: 1%;
+  display: inline-block;
+}
+
+.main.chart-wrapper {
+  width: 96%;
+  height: 400px;
+}
+
+.sub.chart-wrapper {
+  width: 29%;
+  height: 400px;
+  background-color: white;
+  margin: 1%;
+  border-radius: 7px;
+}
+
+.sub.chart-wrapper:hover {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1f4761;
+}
+
+.titles {
+
+  background-color: #3E517A;
+  border-radius: 8px;
+  color: white;
+
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+  .sub.chart-wrapper {
+    width: 96%;
+  }
+}
+
+/*Override Bootstrap button with custom color*/
+.btn-dark {
+  background-color: #db965e !important;
+}
+
+.btn-dark:hover {
+  background-color: #1f4761 !important;
+}
+
+.navbar {
+  /*background-color: #3E517A !important;*/
+  background-color: #1f4761 !important;
+}
+
+.footer {
+  /*background-color: #3E517A !important;*/
+  background-color: #1f4761 !important;
+}
+
+#foot-button {
+  background-color: #db965e;
+  border-style: solid;
+  border-top-style: none;
+  border-color: white;
+  border-width: 1px;
+  color: white;
+}
+
+#foot-button:hover {
+  background-color: #198754;
+  border-width: 1px;
+}
+
+#lowest-row {
+  margin-bottom: 70px;
 }
